@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="/src/assest/fontawesome-free-6.7.2-web/css/all.min.css">
+    <title>Tank</title>
+</head>
+
+<body>
+
+    <!-- header and navbar -->
+    <header class="top-0 w-full bg-tank-dark fixed top-0 md:relative z-[1000]">
+        <nav
+            class="flex gap-5 container items-center justify-between md:justify-normal  py-2 md:py-0 md:px-[2%] xl:px-[1%]">
+            <div class="md:w-[70px] md:h-[69px] w-[50px] hidden md:block">
+                <a href="#">
+                    <img src="./src/assest/img/logo.png" alt="tank ligo" class="block w-full md:rounded-2xl">
+                </a>
+            </div>
+
+            <!-- mobile size -->
+            <div class="flex md:hidden gap-2 items-center ml-[5%]">
+                <div class="md:hidden w-[40px]">
+                    <a href="#">
+                        <img src="./src/assest/img/logo.png" alt="tank ligo"
+                            class="block w-full md:rounded-2xl rounded-[8px]">
+                    </a>
+                </div>
+
+                <div class="flex flex-col w-[222px]">
+                    <h2 class="text-white text-[15px] font-['tank-big']">AVTORUS TANK</h2>
+                    <h3 class="text-white text-[12px]">Offcial Dealer</h3>
+                </div>
+            </div>
+            <!-- --- -->
+
+            <div class="w-full hidden md:block">
+                <div class="flex justify-between w-full border-b border-white/20 py-1">
+                    <div class="text-tank-gray"><span><i class="fas fa-location-dot"></i></span> <span
+                            class="text-[14px]">Yaroslavskoye Highway, Building 2B, Struture 3 (MKAD, 95 km)</span>
+                    </div>
+
+                    <div class="flex gap-9">
+                        <a href="#"><span class="text-primary"><i class="fas fa-gear"></i></span> <span
+                                class="text-white text-[14px]">Book a Service
+                            </span>
+                        </a>
+
+                        <a href="#">
+                            <span class="text-primary"><i class="fas fa-car"></i></span> <span
+                                class="text-[14px] text-white">Test Drive</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex justify-between pt-1.5 pb-4">
+                    <div
+                        class="flex xl:w-[450px] xl:justify-between xl:items-center md:flex-col xl:flex-row md:items-start">
+                        <h2 class="text-white xl:text-[30px] md:text-[20px] font-['tank-big']">AVTORUS TANK</h2>
+                        <span class="h-[15px] bg-white/20 py-3.5 px-[1px] md:hidden xl:block"></span>
+                        <h3 class="text-white xl:text-[18px] md:text-[14px]">Offcial Dealer</h3>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex flex-col">
+                            <span class="text-white text-[20px]">+7 (999) 999-99-99</span>
+                            <span class="text-end text-[12px] text-tank-gray"><i
+                                    class="fas fa-circle text-green-500 text-[6px]"></i> We are online</span>
+                        </div>
+
+                        <div>
+                            <a href="#"
+                                class="xl:w-[196px] h-[46px] md:w-[150px] bg-primary flex justify-center items-center rounded-[10px] hover:bg-hover-color">
+                                <span class="mr-3"><i class="fas fa-phone"></i></span>
+                                <span>Contact us</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile size icons -->
+            <div class="md:hidden flex gap-3 mr-[5%]">
+                <a href="#"><span class="text-white text-[16px]"><i class="fas fa-phone"></i></span></a>
+                <button id="openMenuBtn" class="cursor-pointer text-[16px] text-white"><i
+                        class="fas fa-bars-staggered"></i></button>
+                <button id="closeMenuBtn" class="cursor-pointer text-[16px] text-white hidden"><i
+                        class="fas fa-xmark"></i></button>
+            </div>
+        </nav>
+        <!-- mobile size menu -->
+        <div class="md:hidden fixed top-[57px] bg-tank-dark w-full h-full z-[1000] right-[-100%] transition-all delay-[0.2s]"
+            id="sidebarMobile">
+            <div class="pl-[5%]">
+                <div class="pt-10">
+                    <div class="flex flex-col w-[316px]">
+                        <h2 class="text-white text-[20px] font-['tank-big'] font-bold">AVTORUS TANK</h2>
+                        <h3 class="text-white text-[14px]">Offcial Dealer</h3>
+                    </div>
+                </div>
+
+                <div class="pt-11">
+                    <div class="flex flex-col">
+                        <span class="text-white text-[30px]">+7 (999) 999-99-99</span>
+                        <span class="text-start text-[14px] text-tank-gray"><i
+                                class="fas fa-circle text-green-500 text-[6px]"></i> We are online</span>
+                    </div>
+                </div>
+
+                <div class="w-[291px] pt-11">
+                    <div class="text-tank-gray"><span><i class="fas fa-location-dot"></i></span> <span
+                            class="text-[16px]">Yaroslavskoye Highway, Building 2B, Struture 3 (MKAD, 95 km)</span>
+                    </div>
+
+                    <div class="pt-4">
+                        <span class="text-tank-gray"><i class="fas fa-clock"></i></span>
+                        <span class="text-[16px] text-tank-gray">Working hours 09:00 to 21:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[90%] mx-auto pt-11">
+                <div class="flex flex-col items-center gap-9">
+                    <a href="#"
+                        class="w-[100%] h-[46px] bg-primary flex justify-center items-center rounded-[10px] hover:bg-hover-color">
+                        <span class="mr-3"><i class="fas fa-phone"></i></span>
+                        <span>Contact us</span>
+                    </a>
+
+                    <a href="#"><span class="text-primary"><i class="fas fa-gear"></i></span> <span
+                            class="text-white text-[14px]">Book a Service
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="text-primary"><i class="fas fa-car"></i></span> <span
+                            class="text-[14px] text-white">Test Drive</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- stickiy top navbar -->
+        <div class="w-full bg-tank-dark hidden md:block fixed top-[-100%] transition-all delay-[0.2s] shadow-md shadow-white/20" id="navOnScroll">
+            <div class="container flex px-[2%] py-2 items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-[55px]">
+                        <a href="#">
+                            <img src="./src/assest/img/logo.png" alt="tank ligo" class="block w-full md:rounded-2xl">
+                        </a>
+                    </div>
+
+                    <h2 class="text-white text-[20px] font-['tank-big']">AVTORUS TANK</h2>
+                </div>
+
+                <div class="flex gap-4">
+                    <a href="#"><span class="text-primary text-[14px]"><i class="fas fa-gear"></i></span> <span
+                            class="text-white text-[12px]">Book a Service
+                        </span>
+                    </a>
+
+                    <a href="#">
+                        <span class="text-primary text-[14px]"><i class="fas fa-car"></i></span> <span
+                            class="text-[12px] text-white">Test Drive</span>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#"
+                        class="w-[156px] h-[35px] bg-primary flex justify-center items-center rounded-[8px] hover:bg-hover-color">
+                        <span class="mr-3"><i class="fas fa-phone"></i></span>
+                        <span>Contact us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main>
+        <!-- hero -->
+        <div class="bg-[url(/src/assest/img/heroimg.png)] w-full h-[200px] 
+        md:h-[400px] 2xl:h-[600px] bg-no-repeat bg-cover md:bg-center bg-right flex items-center">
+            <div class="px-[3%] flex flex-col gap-7 pb-10 container hidden  md:flex">
+                <div class="pt-2">
+                    <p class="text-white text-[28px]">we'll improve eny condithin</p>
+                    <h1 class="text-white text-[60px] font-bold">Tank 500</h1>
+                    <p class="text-white text-[28px] ">Only 5 vehicles left!</p>
+                </div>
+
+                <a href="#"
+                    class="inline-block w-[245px] text-center py-3 bg-primary rounded-[10px] hover:bg-hover-color">Get
+                    offer <span><i class="fas fa-angle-right"></i></span></a>
+            </div>
+        </div>
+
+        <!-- offer section -->
+        <section class="bg-tank-dark pb-10">
+            <!-- mobile size hero text -->
+            <div class="px-[3%] flex flex-col gap-7 pb-10 container md:hidden">
+                <div class="pt-2">
+                    <p class="text-white text-[18px]">we'll improve eny condithin</p>
+                    <h1 class="text-white text-[40px]">Tank 500</h1>
+                    <p class="text-white text-[18px] ">Only 5 vehicles left!</p>
+                </div>
+
+                <a href="#"
+                    class="inline-block w-full text-center py-3 bg-primary rounded-[10px] hover:bg-hover-color">Get
+                    offer <span><i class="fas fa-angle-right"></i></span></a>
+            </div>
+
+            <div class="container px-[3%] pt-5">
+                <div
+                    class="bg-tank-dark400 w-full flex flex-col md:flex-row md:justify-between md:items-center gap-4 px-[4%] rounded-[10px] py-4 gap-6">
+                    <P class="text-[28px] md:text-[20px] xl:text-[30px] font-bold text-white">SPECIAL OFFER ENDS IN:</P>
+
+                    <div class="flex items-center justify-center gap-1">
+                        <div
+                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
+                            <span
+                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
+                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
+                                <div
+                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
+                                    <span class="text-[22px] text-white font-bold leading-none">03</span>
+                                    <span class="text-[10px] text-white">Days</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="text-white font-bold">:</span>
+
+                        <div
+                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
+                            <span
+                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
+                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
+                                <div
+                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
+                                    <span class="text-[22px] text-white font-bold leading-none">06</span>
+                                    <span class="text-[10px] text-white">Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="text-white font-bold">:</span>
+
+                        <div
+                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
+                            <span
+                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
+                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
+                                <div
+                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
+                                    <span class="text-[22px] text-white font-bold leading-none">14</span>
+                                    <span class="text-[10px] text-white">Minutes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="text-white font-bold">:</span>
+
+                        <div
+                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
+                            <span
+                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
+                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
+                                <div
+                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
+                                    <span class="text-[24px] text-white font-bold leading-none">55</span>
+                                    <span class="text-[10px] text-white">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="w-full md:w-[248px] bg-primary md:h-[52px] md:text-[11px] xl:text-[16px] py-3 flex justify-center items-center rounded-[10px] hover:bg-hover-color">Chek
+                        price & best benefits <span class="pl-1"><i class="fas fa-angle-right"></i></span></a>
+                </div>
+            </div>
+
+            <!-- service boxes -->
+            <div class="container px-[3%] pt-14">
+                <div class="flex flex-col gap-3 xl:gap-5 xl:flex-row">
+                    <div
+                        class="w-full h-[84px] xl:h-[136px] flex items-center xl:items-start md:justify-center xl:justify-start gap-5 border-2 border-white/20 rounded-[10px] p-[20px]">
+                        <span class="text-white text-[27px]"><i class="fas fa-award"></i></span>
+                        <div class="">
+                            <h3 class="text-white font-bold text-[20px]">OFFICIAL DEALER</h3>
+                            <p class="hidden xl:block text-[16px] text-white/40 pt-2">We guarantee high-quality service.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full h-[84px] xl:h-[136px] flex items-center xl:items-start md:justify-center xl:justify-start gap-5 border-2 border-white/20 rounded-[10px] p-[20px]">
+                        <span class="text-white text-[27px]"><i class="fas fa-clock-rotate-left"></i></span>
+                        <div class="">
+                            <h3 class="text-white font-bold text-[20px]">BUY A CAR IN 1 DAY</h3>
+                            <p class="hidden xl:block text-[16px] text-white/40 pt-2">Eazy and fast process including
+                                all documents.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full h-[84px] xl:h-[136px] flex items-center xl:items-start md:justify-center xl:justify-start gap-5 border-2 border-white/20 rounded-[10px] p-[20px]">
+                        <span class="text-white text-[27px]"><i class="fas fa-clipboard-check"></i></span>
+                        <div class="">
+                            <h3 class="text-white font-bold text-[20px]">ALL CONFIGURATIONS IN STOCK</h3>
+                            <p class="hidden xl:block text-[16px] text-white/40 pt-2">Wide selection with full
+                                documentions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- motto -->
+            <div class="container px-[3%] pt-17">
+                <h2 class="text-white text-[28px] xl:text-[40px] font-bold text-center uppercase">book youre vehicle
+                    today and get an extera benefit of 100,000 p</h2>
+
+                <div class="flex pt-3 xl:pt-6 justify-center">
+                    <div class="min-w-[140px] md:max-w-[196px]">
+                        <img src="./src/assest/img/smalltank300.png" alt="tank 300" class="block w-full">
+                        <h4 class="text-center uppercase text-[16px] text-white">tank 300</h4>
+                    </div>
+                    <div class="min-w-[140px] md:max-w-[196px]">
+                        <img src="./src/assest/img/smalltank500.png" alt="tank 500" class="block w-full">
+                        <h4 class="text-center uppercase text-[16px] text-white">tank 500</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

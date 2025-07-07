@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'tank-big';
+    src: url("/src/assest/fonts/After\ Night.ttf");
+}
+
+@font-face {
+    font-family: 'tank-ital';
+    src: url("/src/assest/fonts/NinaScriptDemo.ttf");
+}
+
+html{scroll-behavior: smooth;}
+
+@theme {
+    --color-primary: #FF9549;
+    --color-hover-color: #FE8630;
+    --color-tank-dark: #181818;
+    --color-tank-dark700: #1C2121;
+    --color-tank-dark400: #252C2C;
+    --color-tank-gray: #939697;
+    --color-tank-graydark: #383838;
+}
+
+@layer components {
+    .container {
+        @apply w-[1296px] mx-auto
+    }
+}
