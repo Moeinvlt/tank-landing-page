@@ -12,6 +12,17 @@
 
 html{scroll-behavior: smooth;}
 
+.owl-carousel .item img{
+    height: 220px;
+    border-radius: 10px;
+}
+
+.owl-stage-outer{
+    height: 220px;
+}
+
+.owl-dots{display: none;}
+
 @theme {
     --color-primary: #FF9549;
     --color-hover-color: #FE8630;

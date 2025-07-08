@@ -43,3 +43,19 @@
     });
 
 // *** The end *** //
+
+// *** owl carousel *** //
+
+$('.owl-carousel').owlCarousel({
+    center: false,
+    items:2,
+    loop:false,
+    margin:10,
+    responsive:{
+        768:{
+            items:1
+        }
+    }
+})
+
+// *** The end *** //

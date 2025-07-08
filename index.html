@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="/src/input.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="/src/assest/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/src/assest/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- font awsome -->
     <link rel="stylesheet" href="/src/assest/fontawesome-free-6.7.2-web/css/all.min.css">
     <title>Tank</title>
 </head>
@@ -145,7 +149,8 @@
         </div>
 
         <!-- stickiy top navbar -->
-        <div class="w-full bg-tank-dark hidden md:block fixed top-[-100%] transition-all delay-[0.2s] shadow-md shadow-white/20" id="navOnScroll">
+        <div class="w-full bg-tank-dark hidden md:block fixed top-[-100%] transition-all delay-[0.2s] shadow-md shadow-white/20"
+            id="navOnScroll">
             <div class="container flex px-[2%] py-2 items-center justify-between">
                 <div class="flex items-center gap-4">
                     <div class="w-[55px]">
@@ -336,11 +341,139 @@
                 </div>
             </div>
         </section>
+
+        <!-- tank 300 product section -->
+        <section class="bg-tank-dark700 pb-8">
+            <div class="container px-[3%] pt-10 flex flex-col xl:flex-row">
+                <div class="relative">
+                    <div class="relative">
+                        <span
+                            class="w-[100px] text-[12px] rounded-[10px] text-center py-3 bg-primary absolute right-[10px] md:right-[5rem] xl:right-[5rem] top-[10px] md:top-[4rem] xl:top-[8rem] rotate-20">
+                            Only 5 car left
+                        </span>
+
+                        <img src="./src/assest/img/tank300_colors/tank300_red.png" alt="tank300"
+                            class="block w-full max-w-[932px]">
+                        <img src="./src/assest/img/tank300_colors/tank300_orange.png" alt="tank300"
+                            class="absolute top-[-15px] opacity-0 invisible block w-full max-w-[932px]">
+                        <img src="./src/assest/img/tank300_colors/tank300_gray.png" alt="tank300"
+                            class="absolute top-[-15px] opacity-0 invisible block w-full max-w-[932px]">
+                        <img src="./src/assest/img/tank300_colors/tank300_black.png" alt="tank300"
+                            class="absolute top-[-15px] opacity-0 invisible block w-full max-w-[932px]">
+                        <img src="./src/assest/img/tank300_colors/tank300_white.png" alt="tank300"
+                            class="absolute top-[-15px] opacity-0 invisible block w-full max-w-[932px]">
+                    </div>
+                </div>
+
+                <div class="flex gap-2 justify-center xl:flex-col">
+                    <button class="cursor-pointer bg-[#EF2929] w-[30px] h-[30px] rounded-full"><span
+                            class="text-white"><i class="fas fa-check"></i></span></button>
+                    <button class="cursor-pointer bg-[#DF4C30] w-[30px] h-[30px] rounded-full"><span
+                            class="text-white hidden"><i class="fas fa-check"></i></span></button>
+                    <button class="cursor-pointer bg-[#C6C9CE] w-[30px] h-[30px] rounded-full"><span
+                            class="text-black hidden"><i class="fas fa-check"></i></span></button>
+                    <button
+                        class="cursor-pointer bg-[#212329] w-[30px] h-[30px] rounded-full border-1 border-white/20"><span
+                            class="text-white hidden"><i class="fas fa-check"></i></span></button>
+                    <button class="cursor-pointer bg-[#E6E7E8] w-[30px] h-[30px] rounded-full"><span
+                            class="text-black hidden"><i class="fas fa-check"></i></span></button>
+                </div>
+
+                <div class="pt-6 xl:order-first">
+                    <p class="text-primary text-[14px] uppercase Pb-3 md:text-center xl:text-start">only at avtorus</p>
+
+                    <h2 class="text-[28px] text-white font-bold uppercase md:text-center xl:text-start">tank 300</h2>
+
+                    <h3 class="text-[24px] font-500 text-white pb-4 leading-7 md:text-center xl:text-start">Benefit on
+                        Trade-in up to 450,000 P</h3>
+
+                    <div class="text-white bg-[#FF2B00] text-center rounded-[8px] py-1 mx-auto max-w-[500px]"><span
+                            class="text-white pr-2"><i class="fas fa-exclamation"></i></span> Limited Time Offer <span
+                            class="text-white pl-2"><i class="fas fa-exclamation"></i></span></div>
+
+                    <a href="#"
+                        class="block bg-primary hover:bg-hover-color w-full text-center py-3 rounded-[10px] mt-6 mx-auto max-w-[500px]">Find
+                        out price <span class="pl-3"><i class="fas fa-angle-right"></i></span></a>
+                    <a href="#"
+                        class="text-white block bg-inhirit border-1 border-primary hover:bg-hover-color w-full text-center py-3 rounded-[10px] mt-3 mx-auto max-w-[500px]">Test
+                        Drive <span class="pl-3"><i class="fas fa-angle-right"></i></span></a>
+                    <a href="#"
+                        class="text-white block bg-inhirit border-1 border-primary hover:bg-hover-color w-full text-center py-3 rounded-[10px] mt-3 mx-auto max-w-[500px]">Calculate
+                        credit <span class="pl-3"><i class="fas fa-angle-right"></i></span></a>
+                </div>
+            </div>
+
+            <div class="container px-[3%] pt-7 flex flex-col md:flex-row xl:gap-4 gap-2">
+                <div class="bg-tank-dark mx-auto xl:mx-0 w-full max-w-[500px] px-4 py-2 rounded-[10px]">
+                    <span class="text-primary pr-3 text-[22px]"><i class="fas fa-clipboard-check"></i></span>
+                    <span class="text-white text-[16px] font-500">Cars with Certificate of Title</span>
+                </div>
+                <div class="bg-tank-dark mx-auto xl:mx-0 w-full max-w-[500px] px-4 py-2 rounded-[10px]">
+                    <span class="text-primary pr-3 text-[22px]"><i class="fas fa-shield-halved"></i></span>
+                    <span class="text-white text-[16px] font-500">Service up to 5years / 150,000 km</span>
+                </div>
+                <div class="bg-tank-dark mx-auto xl:mx-0 w-full max-w-[500px] px-4 py-2 rounded-[10px]">
+                    <span class="text-primary pr-3 text-[22px]"><i class="fas fa-tag"></i></span>
+                    <span class="text-white text-[16px] font-500">We beat any offer</span>
+                </div>
+                <div class="bg-tank-dark mx-auto xl:mx-0 w-full max-w-[500px] px-4 py-2 rounded-[10px]">
+                    <span class="text-primary pr-3 text-[22px]"><i class="fas fa-percent"></i></span>
+                    <span class="text-white text-[16px] font-500">0.1% Credit</span>
+                </div>
+            </div>
+
+            <!-- carousel for mobile size -->
+            <div class="container px-[3%] pt-5 md:hidden">
+                <div class="owl-carousel">
+                    <div class="item">
+                        <img src="./src/assest/img/tank300Info/tank300decPic_1.png" alt="tank300">
+                    </div>
+                    <div class="item">
+                        <img src="./src/assest/img/tank300Info/tank300decPic2.png" alt="tank300">
+                    </div>
+                    <div class="item">
+                        <img src="./src/assest/img/tank300Info/tank300decPic3.png" alt="tank300">
+                    </div>
+                    <div class="item">
+                        <img src="./src/assest/img/tank300Info/tank300decPic4.png" alt="tank300">
+                    </div>
+                    <div class="item">
+                        <img src="./src/assest/img/tank300Info/tank300decPic5.png" alt="tank300">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center pt-8 gap-4 hidden md:flex">
+                <div class="w-[240px] h-[200px]">
+                    <img src="./src/assest/img/tank300Info/tank300decPic_1.png" alt=""
+                        class="block w-full h-full rounded-[10px]">
+                </div>
+                <div class="w-[240px] h-[200px]">
+                    <img src="./src/assest/img/tank300Info/tank300decPic2.png" alt=""
+                        class="block w-full h-full rounded-[10px]">
+                </div>
+                <div class="w-[240px] h-[200px]">
+                    <img src="./src/assest/img/tank300Info/tank300decPic3.png" alt=""
+                        class="block w-full h-full rounded-[10px]">
+                </div>
+                <div class="w-[240px] h-[200px]">
+                    <img src="./src/assest/img/tank300Info/tank300decPic4.png" alt=""
+                        class="block w-full h-full rounded-[10px]">
+                </div>
+                <div class="w-[240px] h-[200px]">
+                    <img src="./src/assest/img/tank300Info/tank300decPic5.png" alt=""
+                        class="block w-full h-full rounded-[10px]">
+                </div>
+            </div>
+        </section>
     </main>
 
 
 
-
+    <!-- owl carousel js -->
+    <script src="src/assest/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="src/assest/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- my js -->
     <script src="./src/js/main.js"></script>
 </body>
 
