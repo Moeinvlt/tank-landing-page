@@ -25,6 +25,7 @@
 
 // *** The end *** //
 
+
 // *** Hide and show nav on scroll *** //
 
     const navOnScroll = document.getElementById("navOnScroll");
@@ -43,6 +44,7 @@
     });
 
 // *** The end *** //
+
 
 // *** owl carousel *** //
 
