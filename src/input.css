@@ -23,6 +23,20 @@ html{scroll-behavior: smooth;}
 
 .owl-dots{display: none;}
 
+.loc_mark::after{
+    content: "";
+    width: 0;
+    height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 25px solid #FF9549;
+    background-color: transparent;
+    position: absolute;
+    bottom: -17px;
+    z-index: -1;
+}
+
+
 @theme {
     --color-primary: #FF9549;
     --color-hover-color: #FE8630;
