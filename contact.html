@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/src/assest/fontawesome-free-6.7.2-web/css/all.min.css">
+    <title>Tank Contact form</title>
+</head>
+
+<body>
+    <section class="w-full h-[100dvh] bg-tank-dark flex justify-center items-center">
+        <div class="bg-tank-dark700 w-[555px] max-w-[555px] flex flex-col items-center mx-[4%] rounded-[10px] gap-[2rem] py-[2.3rem]">
+            <div>
+                <h3 class="text-[30px] font-bold text-center uppercase text-white pb-3">دریافت قیمت</h3>
+                <p class="text-center text-[16px] text-white leading-7">لطفا اطلاعات خود را وارد کنید <br>
+                    مدیر ما ظرف ۱۵ دقیقه با شما تماس خواهد گرفت
+                </p>
+            </div>
+
+            <div class="w-full md:w-[60%]">
+                <form action="#">
+                    <div class="flex flex-col gap-5 px-[4%] md:px-0">
+                        <div class="flex flex-col gap-1">
+                            <label for="" class="text-tank-gray text-[14px]">مدل</label>
+                            <select name="" id="" class="w-full text-tank-gray border-1 border-tank-gray py-3 rounded-[10px]">
+                                <option value="" selected disabled></option>
+                                <option value="tank300">Tank 300</option>
+                                <option value="tank500">Tank 500</option>
+                            </select>
+                        </div>
+                        
+                        <div class="flex flex-col gap-1">
+                            <label for="" class="text-tank-gray text-[14px]">تلفن</label>
+                            <input type="text" class="w-full text-tank-gray border-1 border-tank-gray py-3 px-4 rounded-[10px]"
+                                placeholder="+z(__)_-_-_">
+        
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-primary inline-block cursor-pointer mt-4 py-3 rounded-[10px] font-bold hover:bg-hover-color">دریافت قیمت <span
+                                class="pl-3"><i class="fas fa-angle-right"></i></span></button>
+                        
+                    </div>
+                    <div class="flex items-center gap-3 pt-6 px-[4%] md:px-0">
+                        <input type="checkbox" name="" id=""> 
+                        
+                        <label for="" class="text-[14px] text-white">
+                            من با پردازش داده‌های شخصی موافقم
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
