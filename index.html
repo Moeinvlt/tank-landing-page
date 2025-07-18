@@ -218,76 +218,77 @@
                     offer <span><i class="fas fa-angle-right"></i></span></a>
             </div>
 
+            <!-- countdown timer with SVG rings -->
             <div class="container px-[3%] pt-5">
                 <div
                     class="bg-tank-dark400 w-full flex flex-col md:flex-row md:justify-between md:items-center gap-4 px-[4%] rounded-[10px] py-4 gap-6">
-                    <P class="text-[28px] md:text-[20px] xl:text-[30px] font-bold text-white">SPECIAL OFFER ENDS IN:</P>
+                    <p class="text-[28px] md:text-[20px] xl:text-[30px] font-bold text-white">SPECIAL OFFER ENDS IN:</p>
 
-                    <div class="flex items-center justify-center gap-1">
-                        <div
-                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
-                            <span
-                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
-                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
-                                <div
-                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
-                                    <span class="text-[22px] text-white font-bold leading-none">03</span>
-                                    <span class="text-[10px] text-white">Days</span>
-                                </div>
+                    <div class="flex items-center justify-center gap-4" id="countdown-timer">
+                        <!-- Days -->
+                        <div class="flex flex-col items-center">
+                            <div class="relative w-[70px] md:w-[80px] h-[70px] md:h-[80px]">
+                                <svg class="w-full h-full rotate-[-90deg]" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#939697" stroke-width="6" fill="none" />
+                                    <circle id="ring-days" cx="50" cy="50" r="45" stroke="#FF9549" stroke-width="6"
+                                        fill="none" stroke-linecap="round" stroke-dasharray="282.743"
+                                        stroke-dashoffset="0" />
+                                </svg>
+                                <span id="days-value"
+                                    class="absolute flex justify-center items-center inset-0 text-white text-[22px] font-bold">00</span>
                             </div>
+                            <span class="text-[10px] text-white mt-1">Days</span>
                         </div>
-
-                        <span class="text-white font-bold">:</span>
-
-                        <div
-                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
-                            <span
-                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
-                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
-                                <div
-                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
-                                    <span class="text-[22px] text-white font-bold leading-none">06</span>
-                                    <span class="text-[10px] text-white">Hours</span>
-                                </div>
+                        <!-- Hours -->
+                        <div class="flex flex-col items-center">
+                            <div class="relative w-[70px] md:w-[80px] h-[70px] md:h-[80px]">
+                                <svg class="w-full h-full rotate-[-90deg]" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#939697" stroke-width="6" fill="none" />
+                                    <circle id="ring-hours" cx="50" cy="50" r="45" stroke="#FF9549" stroke-width="6"
+                                        fill="none" stroke-linecap="round" stroke-dasharray="282.743"
+                                        stroke-dashoffset="0" />
+                                </svg>
+                                <span id="hours-value"
+                                    class="absolute inset-0 flex items-center justify-center text-white text-[22px] font-bold">00</span>
                             </div>
+                            <span class="text-[10px] text-white mt-1">Hours</span>
                         </div>
-
-                        <span class="text-white font-bold">:</span>
-
-                        <div
-                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
-                            <span
-                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
-                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
-                                <div
-                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
-                                    <span class="text-[22px] text-white font-bold leading-none">14</span>
-                                    <span class="text-[10px] text-white">Minutes</span>
-                                </div>
+                        <!-- Minutes -->
+                        <div class="flex flex-col items-center">
+                            <div class="relative w-[70px] md:w-[80px] h-[70px] md:h-[80px]">
+                                <svg class="w-full h-full rotate-[-90deg]" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#939697" stroke-width="6" fill="none" />
+                                    <circle id="ring-minutes" cx="50" cy="50" r="45" stroke="#FF9549" stroke-width="6"
+                                        fill="none" stroke-linecap="round" stroke-dasharray="282.743"
+                                        stroke-dashoffset="0" />
+                                </svg>
+                                <span id="minutes-value"
+                                    class="absolute inset-0 flex items-center justify-center text-white text-[22px] font-bold">00</span>
                             </div>
+                            <span class="text-[10px] text-white mt-1">Minutes</span>
                         </div>
-
-                        <span class="text-white font-bold">:</span>
-
-                        <div
-                            class="w-[70px] h-[70px] rounded-full flex justify-center items-center relative bg-tank-dark400">
-                            <span
-                                class="absolute rounded-full w-[20px] h-[35px] bg-tank-dark400 left-[8px] top-[-6px] rotate-50 inline-block"></span>
-                            <div class="bg-primary w-[70px] h-[70px] rounded-full flex justify-center items-center">
-                                <div
-                                    class="bg-tank-dark400 w-[60px] h-[60px] rounded-full flex flex-col justify-center items-center">
-                                    <span class="text-[24px] text-white font-bold leading-none">55</span>
-                                    <span class="text-[10px] text-white">Seconds</span>
-                                </div>
+                        <!-- Seconds -->
+                        <div class="flex flex-col items-center">
+                            <div class="relative w-[70px] md:w-[80px] h-[70px] md:h-[80px]">
+                                <svg class="w-full h-full rotate-[-90deg]" viewBox="0 0 100 100">
+                                    <circle cx="50" cy="50" r="45" stroke="#939697" stroke-width="6" fill="none" />
+                                    <circle id="ring-seconds" cx="50" cy="50" r="45" stroke="#FF9549" stroke-width="6"
+                                        fill="none" stroke-linecap="round" stroke-dasharray="282.743"
+                                        stroke-dashoffset="0" />
+                                </svg>
+                                <span id="seconds-value"
+                                    class="absolute inset-0 flex items-center justify-center text-white text-[22px] font-bold">00</span>
                             </div>
+                            <span class="text-[10px] text-white mt-1">Seconds</span>
                         </div>
                     </div>
 
                     <a href="#"
-                        class="w-full md:w-[248px] bg-primary md:h-[52px] md:text-[11px] xl:text-[16px] py-3 flex justify-center items-center rounded-[10px] hover:bg-hover-color">Chek
+                        class="w-full md:w-[248px] bg-primary md:text-[11px] xl:text-[16px] py-3 md:px-2 xl:px-0 flex justify-center items-center rounded-[10px] hover:bg-hover-color">Chek
                         price & best benefits <span class="pl-1"><i class="fas fa-angle-right"></i></span></a>
                 </div>
             </div>
+
 
             <!-- service boxes -->
             <div class="container px-[3%] pt-14">
