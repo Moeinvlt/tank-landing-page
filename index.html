@@ -927,8 +927,12 @@
                                         class="cursor-pointer w-full md:max-w-[480px] xl:max-w-[207px] md:mx-auto xl:mx-0 py-3 text-center bg-primary hover:bg-hover-color rounded-[10px]">Request
                                         a call <span class="pl-2"><i class="fas fa-angle-right"></i></span></button>
                                 </div>
-                                <label for="">
-                                    <input type="checkbox" name="" id="" class="text-tank-dark400">
+                                <label for="" class="relative">
+                                    <input type="checkbox" name="" id=""
+                                        class="customCheck appearance-none w-[17px] h-[17px] border-1 border-tank-gray rounded-[4px] bg-tank-dark400 cursor-pointer checked:bg-primary peer">
+                                    <span
+                                        class="checkMark text-[11px] text-black absolute top-[2px] left-[4px] opacity-0 invisible pointer-events-none peer-checked:opacity-100 peer-checked:visible"><i
+                                            class="fas fa-check"></i></span>
                                     <span class="text-[12px] text-white">I agree to the processing of personal
                                         data.</span>
                                 </label>
