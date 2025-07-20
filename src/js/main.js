@@ -111,3 +111,63 @@ $('.owl-carousel').owlCarousel({
 })
 
 // *** The end *** //
+
+
+// *** Tank 300 change img color *** //
+
+    const tank300ChangePic = document.querySelectorAll(".tank300ChangePic");
+    const tank300ImgColors = document.querySelectorAll("img[alt='tank300colorspic']");
+
+    tank300ChangePic.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            // remove check from all buttons
+            tank300ChangePic.forEach(btn => {
+                const iconSpan = btn.querySelector("span");
+                iconSpan.classList.add("hidden");
+            });
+
+            // show check only on the clicked button
+            const iconSpan = button.querySelector("span");
+            iconSpan.classList.remove("hidden");
+
+            // hide every images 
+            tank300ImgColors.forEach(img => {
+                img.classList.add("opacity-0", "invisible");
+            });
+
+            // show only images that relate to this button
+            tank300ImgColors[index].classList.remove("opacity-0", "invisible");
+        });
+});
+
+// *** The end *** //
+
+
+// *** Tank 500 change img color *** //
+
+const tank500ChangePic = document.querySelectorAll(".tank500ChangePic");
+const tank500ImgColors = document.querySelectorAll("img[alt='tank500colorspic']");
+
+tank500ChangePic.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        // remove check from all buttons
+        tank500ChangePic.forEach(btn => {
+            const iconSpan = btn.querySelector("span");
+            iconSpan.classList.add("hidden");
+        });
+
+        // show check only on the clicked button
+        const iconSpan = button.querySelector("span");
+        iconSpan.classList.remove("hidden");
+
+        // hide every images 
+        tank500ImgColors.forEach(img => {
+            img.classList.add("opacity-0", "invisible");
+        });
+
+        // show only images that relate to this button
+        tank500ImgColors[index].classList.remove("opacity-0", "invisible");
+    });
+});
+
+// *** The End *** //
